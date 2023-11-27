@@ -1,5 +1,5 @@
 
-```markdown
+
 # Microprocessor Lab (CSE-364.2)
 
 Welcome to the Microprocessor Lab repository (CSE-364.2)! 
