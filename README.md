@@ -230,4 +230,4 @@ in the source operands are 1. This demonstrates the logical OR behavior in assem
 **Note:** Replace `org 100h` with the appropriate origin address if required by your system.
 
 Enjoy exploring the world of microprocessors and assembly programming!
-```
+
