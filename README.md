@@ -6,8 +6,7 @@ Welcome to the Microprocessor Lab repository (CSE-364.2)!
 This collection contains assembly language programs designed
  to perform basic arithmetic operations using a microprocessor.
 
-## Programs Included ##
-
+# Programs Included 
 
 ### `add.asm`
 
@@ -27,6 +26,7 @@ This collection contains assembly language programs designed
 
   code ends
   end
+
   ```
   ![Addition ASM](./media/add.png)
 
