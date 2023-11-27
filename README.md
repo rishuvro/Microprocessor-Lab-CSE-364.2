@@ -2,7 +2,9 @@
 ```markdown
 # Microprocessor Lab (CSE-364.2)
 
-Welcome to the Microprocessor Lab repository (CSE-364.2)! This collection contains assembly language programs designed to perform basic arithmetic operations using a microprocessor.
+Welcome to the Microprocessor Lab repository (CSE-364.2)! 
+This collection contains assembly language programs designed
+ to perform basic arithmetic operations using a microprocessor.
 
 ## Programs Included ##
 
