@@ -93,24 +93,24 @@ This collection contains assembly language programs designed
   ```
   ![Division ASM](./media/div.png)
 
-### `and.asm`
+### `div.asm`
 
 - **Description:** AND between corresponding bits of the `destination` and `source`.
 - **Code:**
   ```assembly
- org 100h
-code segment
-    assume cs:code, ds:code
-    
-    mov ax, 5h
-    mov bx, 3h
-    
-    and ax,bx
-    
-    hlt
-    code ends
-end 
+  org 100h
 
+  code segment
+  assume cs:code, ds:code
+
+  mov ax, 5h
+  mov bx, 3h
+
+  and ax,bx
+  hlt
+
+  code ends
+  end
   ```
   ![AND ASM](./media/and.png)
 
