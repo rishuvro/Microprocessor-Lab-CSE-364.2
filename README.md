@@ -93,7 +93,7 @@ This collection contains assembly language programs designed
   ```
   ![Division ASM](./media/div.png)
 
-### `div.asm`
+### `and.asm`
 
 - **Description:** AND between corresponding bits of the `destination` and `source`.
 - **Code:**
