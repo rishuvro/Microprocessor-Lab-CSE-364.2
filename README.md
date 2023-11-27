@@ -220,9 +220,73 @@ in the source operands are 1. This demonstrates the logical OR behavior in assem
 --- 
 
 
+### `xor.asm`
+
+- **Description:** Performs bitwise XOR operation on two numbers.
+- **Code:**
+
+  ```assembly
+  org 100h
+
+  code segment
+      assume cs:code, ds:code
+      
+      mov ax, 6h
+      mov bx, 4h 
+      
+      xor ax, bx
+      
+      hlt
+  code ends
+  end
+  ```
+
+  ![xor.asm](./media/xor.png)
+
+---
+
+### `XOR` Instruction in Assembly Language
+
+The `xor` instruction in assembly language is a bitwise logical operation that performs an exclusive OR (XOR) between two operands. 
+It operates by comparing the binary representation of two values and performing the XOR operation bit by bit.
+
+#### Syntax:
+
+```assembly
+xor destination, source
+```
+
+- **`destination`:** Represents the register or memory location where the result will be stored.
+- **`source`:** Represents the register, immediate value, or memory location used in the operation.
+
+#### Operation:
+
+The `xor` operation performs a bitwise XOR between corresponding bits of the `destination` and `source` operands:
+
+- If the bits are different (one is 1 and the other is 0), the resulting bit is set to 1.
+- If the bits are the same (both 1 or both 0), the resulting bit is set to 0.
+
+#### Example:
+
+```assembly
+mov ax, 6h   ; Moves the value 6h (binary: 0110) into register AX
+mov bx, 4h   ; Moves the value 4h (binary: 0100) into register BX
+
+xor ax, bx   ; Performs a bitwise XOR between AX and BX
+
+; Result:
+;   AX = 0110 (6 in decimal)
+;   BX = 0100 (4 in decimal)
+;   Result of XOR: 0110 XOR 0100 = 0010 (2 in decimal)
+```
+
+In the provided example, the `xor` operation sets each bit in the destination operand based on the XOR logic applied to the source operands. This demonstrates the exclusive OR behavior in assembly language, operating on binary values.
+
+---
+
 ## Instructions
 
-- Each `.asm` file contains assembly code for a specific arithmetic operation.
+- Each `.asm` file contains assembly code for a specific arithmetic and logical operation.
 - Utilize an appropriate assembler or microprocessor simulator to assemble and execute these programs.
 - Ensure a thorough understanding of the provided instructions before execution.
 - Feel free to modify or expand upon these programs for experimentation or learning purposes.
