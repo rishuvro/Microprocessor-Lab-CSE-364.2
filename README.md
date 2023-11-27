@@ -231,3 +231,4 @@ in the source operands are 1. This demonstrates the logical OR behavior in assem
 
 Enjoy exploring the world of microprocessors and assembly programming!
 
+```
