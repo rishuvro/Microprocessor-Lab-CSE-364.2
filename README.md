@@ -93,26 +93,26 @@ This collection contains assembly language programs designed
   ```
   ![Division ASM](./media/div.png)
 
-### `div.asm`
+### `and.asm`
 
-- **Description:** Divides one number by another.
+- **Description:** AND between corresponding bits of the `destination` and `source`.
 - **Code:**
   ```assembly
-  org 100h
+ org 100h
+code segment
+    assume cs:code, ds:code
+    
+    mov ax, 5h
+    mov bx, 3h
+    
+    and ax,bx
+    
+    hlt
+    code ends
+end 
 
-  code segment
-  assume cs:code, ds:code
-
-  mov ax, 8h
-  mov bx, 4h
-
-  div bx
-  hlt
-
-  code ends
-  end
   ```
-  ![Division ASM](./media/and.png)
+  ![AND ASM](./media/and.png)
 
 ---
 
