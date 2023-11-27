@@ -155,6 +155,71 @@ In the example, the `and` operation sets each bit in the destination operand to 
 in both operands are 1; otherwise, it sets the bit to 0. This operation demonstrates the logical AND behavior in assembly language.
 
 ---
+
+### `or.asm`
+
+- **Description:** OR between corresponding bits of the `destination` and `source`.
+- **Code:**
+  ```assembly
+  org 100h
+
+  code segment
+  assume cs:code, ds:code
+
+  start:
+    mov ax, 4h
+    mov bx, 2h
+
+    or ax, bx
+
+  code ends
+  end start
+  ```
+  ![OR ASM](./media/or.png)
+
+---
+
+### `OR` Instruction in Assembly Language
+
+The `or` instruction in assembly language is a bitwise logical operation that performs a logical OR between two operands. 
+It operates by comparing the binary representation of two values and performing the OR operation bit by bit.
+
+#### Syntax:
+
+```assembly
+or destination, source
+```
+
+- **`destination`:** Represents the register or memory location where the result will be stored.
+- **`source`:** Represents the register, immediate value, or memory location used in the operation.
+
+#### Operation:
+
+The `or` operation performs a bitwise OR between corresponding bits of the `destination` and `source` operands:
+
+- If any of the bits are 1, the resulting bit is set to 1.
+- If both bits are 0, the resulting bit is set to 0.
+
+#### Example:
+
+```assembly
+mov ax, 4h   ; Moves the value 4h (binary: 0100) into register AX
+mov bx, 2h   ; Moves the value 2h (binary: 0010) into register BX
+
+or ax, bx   ; Performs a bitwise OR between AX and BX
+
+; Result:
+;   AX = 0100 (4 in decimal)
+;   BX = 0010 (2 in decimal)
+;   Result of OR: 0100 OR 0010 = 0110 (6 in decimal)
+```
+
+In the provided example, the `or` operation sets each bit in the destination operand to 1 if any of the corresponding bits 
+in the source operands are 1. This demonstrates the logical OR behavior in assembly language, operating on binary values.
+
+--- 
+```
+
 ## Instructions
 
 - Each `.asm` file contains assembly code for a specific arithmetic operation.
