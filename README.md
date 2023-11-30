@@ -370,6 +370,95 @@ To execute this code:
 The expected result of `(ax * bx) + dx` will be stored in the `ax` register after running this program.
 
 
+### `task2.asm`
+
+- **Description:** Computes the result of `(45h * 56h) + 56h - 76h`.
+- **Code:**
+
+  ```assembly
+  org 100h
+  code segment 
+      assume cs:code, ds:code
+
+      mov al, 45h
+      mov bl, 56h
+
+      mul bl 
+
+      mov cl, 56h
+      add ax, cx  
+
+      mov dl, 76h
+      sub ax, dx
+
+      hlt
+  code ends
+  end
+  ```
+
+  ![task2.asm](./media/task2.png)
+
+---
+
+### Arithmetic Operations in Assembly Language
+
+This assembly program (`task2.asm`) performs arithmetic operations to calculate the result of `(45h * 56h) + 56h - 76h`.
+
+#### Problem Description:
+The expression to compute is:
+- Multiply `45h` by `56h`.
+- Add `56h` to the result.
+- Subtract `76h` from the accumulated value.
+
+#### Assembly Code Explanation:
+
+##### Code:
+```assembly
+org 100h
+code segment 
+    assume cs:code, ds:code
+
+    mov al, 45h
+    mov bl, 56h
+
+    mul bl 
+
+    mov cl, 56h
+    add ax, cx  
+
+    mov dl, 76h
+    sub ax, dx
+
+    hlt
+code ends
+end
+```
+
+##### Code Breakdown:
+1. **Initialization:**
+    - `al` is loaded with the value `45h`.
+    - `bl` is loaded with the value `56h`.
+
+2. **Multiplication:**
+    - The `mul` instruction multiplies `al` by `bl`, storing the result in `ax`.
+
+3. **Addition:**
+    - `cl` is loaded with the value `56h`.
+    - The content of `cx` (combining `cl` and `ch`) is added to the result stored in `ax`.
+
+4. **Subtraction:**
+    - `dl` is loaded with the value `76h`.
+    - The content of `dx` (combining `dl` and `dh`) is subtracted from the accumulated value in `ax`.
+
+#### Usage Instructions:
+To execute this code:
+- Use an appropriate assembler or microprocessor simulator.
+- Load and assemble `task2.asm`.
+- Run the program to obtain the result.
+
+
+The expected result of `(45h * 56h) + 56h - 76h` will be stored in the `ax` register after running this program.
+
 
 
 ---
