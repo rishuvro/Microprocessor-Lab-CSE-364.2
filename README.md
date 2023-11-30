@@ -284,7 +284,7 @@ In the provided example, the `xor` operation sets each bit in the destination op
 
 ---
 
-```
+
 ### `task1.asm`
 
 - **Description:** Computes the result of `(ax * bx) + dx`.
