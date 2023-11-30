@@ -161,19 +161,20 @@ in both operands are 1; otherwise, it sets the bit to 0. This operation demonstr
 - **Description:** OR between corresponding bits of the `destination` and `source`.
 - **Code:**
   ```assembly
-  org 100h
+org 100h
+code segment
+    assume cs:code, ds:code
+    
+  mov ax, 4h
+  mov bx, 2h
 
-  code segment
-  assume cs:code, ds:code
+  or ax, bx
 
-  start:
-    mov ax, 4h
-    mov bx, 2h
-
-    or ax, bx
-
-  code ends
-  end start
+    
+    hlt
+    code ends
+end
+   
   ```
   ![OR ASM](./media/or.png)
 
