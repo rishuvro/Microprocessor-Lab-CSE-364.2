@@ -372,7 +372,7 @@ The expected result of `(ax * bx) + dx` will be stored in the `ax` register afte
 
 
 
-
+---
 ## Instructions
 
 - Each `.asm` file contains assembly code for a specific arithmetic and logical operation.
@@ -384,4 +384,3 @@ The expected result of `(ax * bx) + dx` will be stored in the `ax` register afte
 
 Enjoy exploring the world of microprocessors and assembly programming!
 
-```
