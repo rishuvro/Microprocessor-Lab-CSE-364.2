@@ -370,7 +370,7 @@ To execute this code:
 The expected result of `(ax * bx) + dx` will be stored in the `ax` register after running this program.
 
 
-```
+
 
 
 ## Instructions
@@ -384,3 +384,4 @@ The expected result of `(ax * bx) + dx` will be stored in the `ax` register afte
 
 Enjoy exploring the world of microprocessors and assembly programming!
 
+```
