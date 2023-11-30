@@ -284,6 +284,95 @@ In the provided example, the `xor` operation sets each bit in the destination op
 
 ---
 
+```
+### `task1.asm`
+
+- **Description:** Computes the result of `(ax * bx) + dx`.
+- **Code:**
+
+  ```assembly
+  org 100h
+  code segment 
+      assume cs:code, ds:code
+
+      mov ax, 2234h
+      mov bx, 34h
+      
+      mul bx
+       
+      mov dx, 3456h
+            
+      add ax, dx
+      
+      hlt
+  code ends
+  end
+  ```
+
+  ![task1.asm](./media/task1.png)
+
+---
+
+### Multiplication and Addition in Assembly Language
+
+This assembly program (`task1.asm`) performs multiplication and addition operations to calculate the result of `(ax * bx) + dx`.
+
+#### Problem Description:
+Given:
+- `ax = 2234h`
+- `bx = 34h`
+- `dx = 3456h`
+
+The objective is to compute the result of the expression `(ax * bx) + dx`.
+
+#### Assembly Code Explanation:
+
+##### Code:
+```assembly
+org 100h
+code segment 
+    assume cs:code, ds:code
+
+    mov ax, 2234h
+    mov bx, 34h
+    
+    mul bx
+     
+    mov dx, 3456h
+            
+    add ax, dx
+    
+    hlt
+code ends
+end
+```
+
+##### Code Breakdown:
+1. **Initialization:**
+    - `ax` is loaded with the value `2234h`.
+    - `bx` is loaded with the value `34h`.
+
+2. **Multiplication:**
+    - The `mul` instruction multiplies `ax` by `bx`, storing the result in `ax`.
+
+3. **Addition:**
+    - `dx` is loaded with the value `3456h`.
+    - The content of `dx` is added to the result stored in `ax`.
+    - The final result is available in `ax`.
+
+#### Usage Instructions:
+To execute this code:
+- Use an appropriate assembler or microprocessor simulator.
+- Load and assemble `task1.asm`.
+- Run the program to obtain the result.
+
+
+The expected result of `(ax * bx) + dx` will be stored in the `ax` register after running this program.
+
+
+```
+
+
 ## Instructions
 
 - Each `.asm` file contains assembly code for a specific arithmetic and logical operation.
