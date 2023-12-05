@@ -159,7 +159,8 @@ in both operands are 1; otherwise, it sets the bit to 0. This operation demonstr
 
 - **Description:** OR between corresponding bits of the `destination` and `source`.
 - **Code:**
-  ```assembly
+```
+assembly
 org 100h
 code segment
     assume cs:code, ds:code
@@ -174,7 +175,7 @@ code segment
     code ends
 end
    
-   
+```
   ![OR ASM](./media/or.png)
 
 ---
@@ -225,7 +226,8 @@ in the source operands are 1. This demonstrates the logical OR behavior in assem
 - **Description:** Performs bitwise XOR operation on two numbers.
 - **Code:**
 
-  ```assembly
+  ```
+  assembly
   org 100h
 
   code segment
