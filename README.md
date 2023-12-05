@@ -154,7 +154,6 @@ and ax, bx   ; Performs a bitwise AND between AX and BX
 In the example, the `and` operation sets each bit in the destination operand to 1 only if the corresponding bits 
 in both operands are 1; otherwise, it sets the bit to 0. This operation demonstrates the logical AND behavior in assembly language.
 
----
 
 ### `or.asm`
 
@@ -175,7 +174,7 @@ code segment
     code ends
 end
    
-  ```
+   
   ![OR ASM](./media/or.png)
 
 ---
